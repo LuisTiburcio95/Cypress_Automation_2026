@@ -1,0 +1,24 @@
+{
+  "name": "cypress_automation_2026",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "braveTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/Day1_121525/brave-search.cy.js'",
+    "uspsTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/ActionItem/uspsTest.cy.js'",
+    "capitalone": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/ActionItem/capitalone.cy.js'",
+    "actionitemall": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/ActionItem/*'",
+    "braveTestHeadless": "npx cypress run --browser chrome --spec 'cypress/e2e/ActionItem/brave-search.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-real-events": "^1.15.0",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.4"
+  }
+}
